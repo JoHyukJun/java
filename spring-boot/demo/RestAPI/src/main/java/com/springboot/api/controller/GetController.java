@@ -10,10 +10,20 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.springboot.api.dto.MemberDto;
+import com.springboot.api.dto.ResultDto;
 
 @RestController
 @RequestMapping("/api/v1/get-api")
 public class GetController {
+    @GetMapping(value = "/")
+    public ResultDto getResult() {
+        ResultDto resultDto = new ResultDto();
+
+        resultDto.setMessage("HELLO THERE");
+
+        return resultDto;
+    }
+
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
     public String getHello() {
         return "Hello there";
