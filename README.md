@@ -101,6 +101,12 @@ This is an example of how to list things you need to use the software and how to
   mvn package
   ```
 
+* gradle
+  ```sh
+  ./gradlew build
+  ```
+
+
 ### Installation
 
 Perform the following procedure to install the required package.
@@ -133,7 +139,7 @@ _For more examples, please refer to the [Documentation](https://github.com/JoHyu
 ## Roadmap
 
 - [x] Add tutorial java labs
-- [x] Add log java
+- [x] Add java spring setup
 
 See the [open issues](https://github.com/JoHyukJun/java-labs/issues) for a full list of proposed features (and known issues).
 
